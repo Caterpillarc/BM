@@ -1,0 +1,52 @@
+@form-label-width: 85px;
+@input-normal: 150px;
+@radio-normal: 130px;
+@select-normal: 130px;
+@dateRange-normal: 200px;
+@form-label-color: #ebebf1;
+@normal-font-size: 14px;
+@normal-font-color: #000000;
+.search-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px;
+    background: #fff;
+    #search-form {
+        flex: 1;
+        .ivu-form-item-label {
+            letter-spacing: 1px;
+            padding: 9px 12px;
+            margin-top: 1px;
+            color: @normal-font-color;
+            width: @form-label-width !important;
+            text-align: center;
+            font-size: @normal-font-size;
+            background-color: @form-label-color;
+        }
+        .search {
+            &-input {
+                width: @input-normal;
+                margin-right: 20px;
+            };
+            &-radio {
+                width: @radio-normal;
+                margin-right: 20px;
+            }
+            &-select {
+                width: @select-normal;
+                margin-right: 20px;
+            }
+            &-dateRange {
+                width: @dateRange-normal;
+                margin-right: 20px;
+            }
+        }
+    }
+    .search-btns {
+        text-align: center;
+        .btn-mr {
+            margin-right: 15px;
+        }
+    }
+}
